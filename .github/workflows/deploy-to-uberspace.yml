@@ -23,7 +23,7 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: pnpm run build
+        run: NEXT_PUBLIC_DEPLOY_DATE=$(date "+%Y-%m-%d %H:%M:%S") pnpm run build
 
       - name: Deploy using Rsync
         uses: burnett01/rsync-deployments@6.0.0

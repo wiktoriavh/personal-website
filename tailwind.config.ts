@@ -9,6 +9,7 @@ const brandColors = {
     red: {
       50: "#FFE9E3",
       100: "#FADBD3",
+      500: "#DB4724",
       600: "#CC3816",
     },
     black: {

@@ -2,11 +2,13 @@ import "~/styles/globals.css";
 
 import { type Metadata } from "next";
 import { Navigation } from "~/components/Navigation";
+import { LogoBlob } from "~/components/LogoBlob/LogoBlob";
+import { env } from "~/env";
 
 export const metadata: Metadata = {
-  title: "Wiktoria HomepageS",
+  title: "Wiktoria Van Harneveldt",
   description: "Wiktoria's personal homepage",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: [{ rel: "icon", url: "/favicon.svg" }],
 };
 
 export default function RootLayout({
@@ -14,9 +16,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className="bg-wi-black-50">
+      <body className="flex min-h-screen flex-col bg-wi-black-50">
         <Navigation />
-        <main className="mx-auto max-w-7xl px-8">
+        <main className="mx-auto max-w-7xl flex-1 px-4">
           {children}
           <svg
             width="836"
@@ -33,6 +35,13 @@ export default function RootLayout({
             />
           </svg>
         </main>
+        <footer className="mx-auto flex w-[70ch] max-w-7xl content-center items-center gap-4 p-4 text-2xl">
+          <LogoBlob height={80} />
+          <div className="text-sm">
+            <p>Last deployed on {env.NEXT_PUBLIC_DEPLOY_DATE}</p>
+            <p>Created by Wiktoria Van Harneveldt © 2024</p>
+          </div>
+        </footer>
       </body>
     </html>
   );

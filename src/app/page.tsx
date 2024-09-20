@@ -3,7 +3,7 @@ import { LinkButton } from "~/components/Button";
 export default function HomePage() {
   return (
     <>
-      <h1 className="font-baloo text-8xl font-bold text-wi-brown-500">
+      <h1 className="font-baloo text-5xl font-bold text-wi-brown-500 md:text-8xl">
         Moin, I&apos;m Wiktoria
       </h1>
       <p className="max-w-[70ch] py-6 text-2xl">

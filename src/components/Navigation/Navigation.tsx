@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const pages = [
   { name: "Home", href: "/" },
-  { name: "Bookmarks", href: "/bookmarks" },
+  { name: "Blog", href: "/blog" },
 ];
 
 export const Navigation = () => {

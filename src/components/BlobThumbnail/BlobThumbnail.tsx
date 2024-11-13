@@ -9,12 +9,11 @@ type Props = {
 export const BlobThumbnail: FC<Props> = ({ src, title }) => {
   return (
     <Image
-      className="form-blob-2"
+      className="form-blob-2 aspect-video w-full object-cover"
       src={src}
       alt={title}
-      objectFit="cover"
-      width={300}
-      height={300}
+      width={160}
+      height={90}
     />
   );
 };

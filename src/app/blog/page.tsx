@@ -2,8 +2,7 @@ import { PostPreview } from "~/components/PostPreview/PostPreview";
 
 const content = [
   {
-    title:
-      "This is a really long title that should be truncated This is a really long title that should be truncated",
+    title: "This is a really loally long title that should be truncated",
     src: "https://placedog.net/640/480?random",
     blurb:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. width = 70char",
@@ -15,15 +14,13 @@ const content = [
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et litr, sed diam nonumy eirmod tempor invidunt ut labore et  litr, sed diam nonumy eirmod tempor invidunt ut labore et  litr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. width = 70char",
   },
   {
-    title:
-      "This is a really long title that should be truncated This is a really long title that should be truncated",
+    title: "This is a really loong title that should be truncated",
     src: "https://placedog.net/640/480?random",
     blurb:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. width = 70char",
   },
   {
-    title:
-      "This is a really long title that should be truncated This is a really long title that should be truncated",
+    title: "This is a really long titlehould be truncated",
     src: "https://placedog.net/640/480?random",
     blurb:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. width = 70char",
@@ -32,7 +29,7 @@ const content = [
 
 const Page = () => {
   return (
-    <div className="grid auto-rows-fr gap-4">
+    <div className="flex flex-col gap-4">
       {content.map((post) => (
         <PostPreview key={post.title} {...post} />
       ))}

@@ -16,7 +16,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className="flex min-h-screen flex-col bg-wi-black-50">
+      <body className="flex min-h-screen flex-col bg-wi-black-50 font-sans">
         <Navigation />
         <main className="mx-auto max-w-7xl flex-1 px-4">
           {children}

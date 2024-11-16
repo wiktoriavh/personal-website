@@ -5,7 +5,7 @@ const pages = [{ name: "Home", href: "/" }];
 export const Navigation = () => {
   return (
     <>
-      <nav className="form-blob mx-auto mb-12 mt-4 flex h-24 w-max items-center justify-center bg-wi-brown-500 px-10 pb-8">
+      <nav className="form-blob col-span-12 mx-auto mt-10 flex h-24 w-max items-center justify-center bg-wi-brown-500 px-10 pb-8">
         <ul className="flex justify-center gap-4">
           {pages.map((page) => (
             <li

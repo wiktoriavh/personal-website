@@ -1,9 +1,6 @@
 import Link from "next/link";
 
-const pages = [
-  { name: "Home", href: "/" },
-  { name: "Bookmarks", href: "/bookmarks" },
-];
+const pages = [{ name: "Home", href: "/" }];
 
 export const Navigation = () => {
   return (

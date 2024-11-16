@@ -39,4 +39,8 @@
   .form-blob {
     clip-path: url(#blob);
   }
+
+  .form-blob-2 {
+    clip-path: url(#blob2);
+  }
 }

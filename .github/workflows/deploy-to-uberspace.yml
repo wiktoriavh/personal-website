@@ -16,14 +16,14 @@ jobs:
         with:
           node-version-file: .nvmrc
 
-      - name: Install pnpm
-        run: npm install -g pnpm
+      # - name: Install pnpm
+      #   run: npm install -g pnpm
 
-      - name: Install dependencies
-        run: pnpm install
+      # - name: Install dependencies
+      #   run: pnpm install
 
-      - name: Build
-        run: NEXT_PUBLIC_DEPLOY_DATE=$(date "+%Y-%m-%d %H:%M:%S") pnpm run build
+      # - name: Build
+      #   run: NODE_ENV=production NEXT_PUBLIC_DEPLOY_DATE=$(date "+%Y-%m-%d %H:%M:%S") pnpm run build
 
       - name: Deploy using Rsync
         uses: burnett01/rsync-deployments@6.0.0

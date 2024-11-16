@@ -16,9 +16,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className="flex min-h-screen flex-col bg-wi-black-50 font-sans">
+      <body className="row-auto mx-auto grid min-h-screen max-w-7xl grid-flow-row grid-cols-12 gap-5 bg-wi-black-50 px-4 font-sans">
         <Navigation />
-        <main className="mx-auto max-w-7xl flex-1 px-4">
+        <main className="">
           {children}
           <svg
             width="836"
